@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,15 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
     <link rel="stylesheet" href="assets/css/skins/color1.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- ¬¬¬¬¬ Style Switcher ¬¬¬¬¬ -->
+    <link rel="stylesheet" href="assets/css/skins/color1.css" class="alternate__style" title="color1" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color2.css" class="alternate__style" title="color2" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color3.css" class="alternate__style" title="color3" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color4.css" class="alternate__style" title="color4" disabled>
+    <link rel="stylesheet" href="assets/css/skins/color5.css" class="alternate__style" title="color5" disabled>
+    <link rel="stylesheet" href="assets/css/style__switcher.css">
 </head>
+
 <body>
     <!-- ¬¬¬¬¬ Main Container ¬¬¬¬¬ -->
     <div class="main__container">
@@ -23,19 +32,23 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="uil uil-house-user"></i> Inicio</a></li>
-                <li><a href="#"><i class="uil uil-user"></i> Sobre mí</a></li>
-                <li><a href="#"><i class="uil uil-list-ul"></i> Servicios</a></li>
-                <li><a href="#"><i class="uil uil-briefcase-alt"></i> Portafolio</a></li>
-                <li><a href="#"><i class="uil uil-comments"></i> Contacto</a></li>
+                <li><a href="#home" class="active"><i class="uil uil-house-user"></i> Inicio</a></li>
+                <li><a href="#about"><i class="uil uil-user"></i> Sobre mí</a></li>
+                <li><a href="#service"><i class="uil uil-list-ul"></i> Servicios</a></li>
+                <li><a href="#portfolio"><i class="uil uil-briefcase-alt"></i> Portafolio</a></li>
+                <li><a href="#contact"><i class="uil uil-comments"></i> Contacto</a></li>
             </ul>
             <div class="footer">
                 <div class="footer__redes">
                     <h2>Sígueme en:</h2>
                     <div class="redes__icon">
-                        <a href="https://github.com/ideleim/portafolio" target="_blank"><i class="uil uil-github-alt"></i></a>
+                        <a href="https://github.com/ideleim/portafolio" target="_blank"><i
+                                class="uil uil-github-alt"></i></a>
                         <a href="https://www.facebook.com" target="_blank"><i class="uil uil-facebook-f"></i></a>
-                        <a href="https://wa.me/3219098819?text=Hola,%20estoy%20interesado%20en%20sus%20servicios." target="_blank"><i class="uil uil-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/harold-huertas-b46536252/" target="_blank"><i
+                                class="uil uil-linkedin"></i></a>
+                        <a href="https://wa.me/3219098819?text=Hola,%20estoy%20interesado%20en%20sus%20servicios."
+                            target="_blank"><i class="uil uil-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer__correo">
@@ -46,14 +59,15 @@
         <!-- ¬¬¬¬¬ Main Content -->
         <div class="main__content">
             <!-- ¬¬¬¬¬ Section Home ¬¬¬¬¬ -->
-            <section class="home section hidden">
+            <section class="home active section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home__info padd-15">
                             <h3 class="hello">Hola, mi nombre es <span class="name">Harold Huertas</span></h3>
                             <h3 class="my__profession">soy estudiante <span class="typing">FullStack básico</span></h3>
-                            <p>Soy estudiante del curso básico en desarrollo Full stack, de la Universidad Distrital 2023 en Bogotá, Colombia. </p>
-                            <a href="#contact" class="btn hire__me">Contacto</a>
+                            <p>Soy estudiante del curso básico en desarrollo Full stack, de la Universidad Distrital
+                                2023 en Bogotá, Colombia. </p>
+                            <a href="assets/pdf/CV_Harold_Huertas.pdf" target="_blank" class="btn">Download CV</a>
                         </div>
                         <div class="home__img padd-15">
                             <div class="caja__externa">
@@ -70,7 +84,7 @@
                 </div>
             </section>
             <!-- ¬¬¬¬¬ Section About ¬¬¬¬¬ -->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section__title padd-15">
@@ -82,41 +96,35 @@
                             <div class="row">
                                 <div class="about__text padd-15">
                                     <h3>Mi nombre es Harold Huertas, soy <span>Desarrollador Web básico</span></h3>
-                                    <p>Soy desarrollador web básico, tengo conocimientos en desarrollo de aplicaciones web y desarrollo de software. Me gusta estar actualizado con las nuevas tecnologias que salen dia a dia, el trabajo autónomo y estudiar en modo virtual, tengo varios cursos realizados con el mintic.<br> Además soy una persona autodidacta a la que le gustaria realizar prácticas con un equipo de trabajo donde pueda ampliar mis conocimientos. Busco un entorno de trabajo estimulante que me permita desarrollar mi creatividad y habilidades. </p>
+                                    <p>Soy desarrollador web básico, tengo conocimientos en desarrollo de aplicaciones
+                                        web y desarrollo de software. Me gusta estar actualizado con las nuevas
+                                        tecnologias que salen dia a dia, el trabajo autónomo y estudiar en modo virtual,
+                                        tengo varios cursos realizados con el mintic.<br> Además soy una persona
+                                        autodidacta a la que le gustaria realizar prácticas con un equipo de trabajo
+                                        donde pueda ampliar mis conocimientos. Busco un entorno de trabajo estimulante
+                                        que me permita desarrollar mi creatividad y habilidades. </p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="personal__info padd-15">
                                     <div class="row">
                                         <div class="info__item padd-15">
-                                            <p>Birthday: <span>15 ene 1981</span></p>
+                                            <p>Celular: <span>321 909 88 19</span></p>
                                         </div>
                                         <div class="info__item padd-15">
-                                            <p>Age: <span>43</span></p>
-                                        </div>
-                                        <div class="info__item padd-15">
-                                            <p>Website: <span>www.domain.com</span></p>
+                                            <p>Github: <span><a href="http://github.com/ideleim"
+                                                        target="_blank">https://github.com/ideleim</a></span></p>
                                         </div>
                                         <div class="info__item padd-15">
                                             <p>Email: <span>ideleim@gmail.com</span></p>
                                         </div>
                                         <div class="info__item padd-15">
-                                            <p>Degree: <span>CS</span></p>
-                                        </div>
-                                        <div class="info__item padd-15">
-                                            <p>Phone: <span>321 9098819</span></p>
-                                        </div>
-                                        <div class="info__item padd-15">
-                                            <p>City: <span>Bogotá</span></p>
-                                        </div>
-                                        <div class="info__item padd-15">
-                                            <p>Freelnace: <span>Available</span></p>
+                                            <p>Ciudad: <span>Bogotá - Colombia</span></p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="assets/pdf/CV_Harold_Huertas.pdf" target="_blank" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Contacto</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Contacto</a>
                                         </div>
                                     </div>
                                 </div>
@@ -125,8 +133,8 @@
                                         <div class="skill__item padd-15">
                                             <h5>HTML</h5>
                                             <div class="progress">
-                                                <div class="progress__in" style="width: 96%;"></div>
-                                                <div class="skill__percent">96%</div>
+                                                <div class="progress__in" style="width: 86%;"></div>
+                                                <div class="skill__percent">86%</div>
                                             </div>
                                         </div>
                                         <div class="skill__item padd-15">
@@ -153,24 +161,325 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="row">
-                                <div class="education">
-                                    <h3 class="title">Education</h3>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Educación</h3>
+                                    <div class="row">
+                                        <div class="timeline__box padd-15">
+                                            <div class="timeline shadow__dark">
+                                                <div class="timeline__item">
+                                                    <div class="circle__dot"></div>
+                                                    <h3 class="timeline__date">
+                                                        <i class="uil uil-calendar-alt"></i> 2002 - 2006
+                                                    </h3>
+                                                    <h4 class="timeline__title">Ingeniero Civil</h4>
+                                                    <p class="timeline__text">Corporación Universitaria Minuto de Dios
+                                                    </p>
+                                                </div>
+                                                <div class="timeline__item">
+                                                    <div class="circle__dot"></div>
+                                                    <h3 class="timeline__date">
+                                                        <i class="uil uil-calendar-alt"></i> 1999
+                                                    </h3>
+                                                    <h4 class="timeline__title">Bachiller</h4>
+                                                    <p class="timeline__text">Colegio Jose Maria Cordoba
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="experience">
-                                    <h3 class="title">Experience</h3>
+                                <div class="cursos padd-15">
+                                    <h3 class="title">Cursos</h3>
+                                    <div class="row">
+                                        <div class="timeline__box padd-15">
+                                            <div class="timeline shadow__dark">
+                                                <div class="timeline__item">
+                                                    <div class="circle__dot"></div>
+                                                    <h3 class="timeline__date">
+                                                        <i class="uil uil-calendar-alt"></i> 3 de oct al 23 de Nov -
+                                                        2022
+                                                    </h3>
+                                                    <h4 class="timeline__title">Desarrollo de Aplicaciones Web</h4>
+                                                    <p class="timeline__text">Universidad Industrial de Santander
+                                                    </p>
+                                                </div>
+                                                <div class="timeline__item">
+                                                    <div class="circle__dot"></div>
+                                                    <h3 class="timeline__date">
+                                                        <i class="uil uil-calendar-alt"></i> 8 de Ago al 23 de Sep -
+                                                        2022
+                                                    </h3>
+                                                    <h4 class="timeline__title">Desarrollo de Software</h4>
+                                                    <p class="timeline__text">Universidad Industrial de Santander
+                                                    </p>
+                                                </div>
+                                                <div class="timeline__item">
+                                                    <div class="circle__dot"></div>
+                                                    <h3 class="timeline__date">
+                                                        <i class="uil uil-calendar-alt"></i> 18 de Jun al 29 de Jul -
+                                                        2022
+                                                    </h3>
+                                                    <h4 class="timeline__title">Programación Básica en JAVA</h4>
+                                                    <p class="timeline__text">Universidad Industrial de Santander
+                                                    </p>
+                                                </div>
+                                                <div class="timeline__item">
+                                                    <div class="circle__dot"></div>
+                                                    <h3 class="timeline__date">
+                                                        <i class="uil uil-calendar-alt"></i> 18 de Abr al 3 de Jun -
+                                                        2022
+                                                    </h3>
+                                                    <h4 class="timeline__title">Fundamentos de programación en PYTHON
+                                                    </h4>
+                                                    <p class="timeline__text">Universidad Industrial de Santander
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- ¬¬¬¬¬ Section Services ¬¬¬¬¬ -->
+            <section class="service section" id="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="section__title padd-15">
+                            <h2>Servicios</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="service__item padd-15">
+                            <div class="service__item-inner">
+                                <div class="icon">
+                                    <i class="uil uil-html5"></i>
+                                </div>
+                                <h4>HTML</h4>
+                                <p>Como HTML5 Junior, mi enfoque principal es crear y estructurar el contenido de
+                                    páginas web utilizando las mejores prácticas de HTML5. Además, tengo la capacidad de
+                                    colaborar estrechamente con diseñadores y desarrolladores senior para implementar el
+                                    diseño y la funcionalidad en proyectos web. </p>
+                            </div>
+                        </div>
+                        <div class="service__item padd-15">
+                            <div class="service__item-inner">
+                                <div class="icon">
+                                    <i class="uil uil-css3-simple"></i>
+                                </div>
+                                <h4>CSS</h4>
+                                <p>Como CSS Junior, me dedico a dar estilo y mejorar el aspecto visual de las páginas
+                                    web utilizando CSS. Trabajo en colaboración con diseñadores y desarrolladores senior
+                                    para implementar diseños atractivos y responsivos.</p>
+                            </div>
+                        </div>
+                        <div class="service__item padd-15">
+                            <div class="service__item-inner">
+                                <div class="icon">
+                                    <i class="uil uil-java-script"></i>
+                                </div>
+                                <h4>JS</h4>
+                                <p>Como JavaScript Junior, mi enfoque principal es agregar interactividad y
+                                    funcionalidad a las páginas web utilizando JavaScript. Trabajo en colaboración con
+                                    diseñadores y desarrolladores senior para implementar efectos dinámicos y mejorar la
+                                    experiencia del usuario.</p>
+                            </div>
+                        </div>
+                        <div class="service__item padd-15">
+                            <div class="service__item-inner">
+                                <div class="icon">
+                                    <i class="uil uil-parking-square"></i>
+                                </div>
+                                <h4>PHP</h4>
+                                <p>Como PHP Junior, me especializo en el desarrollo de aplicaciones web utilizando PHP.
+                                    Trabajo en colaboración con diseñadores y desarrolladores senior para implementar
+                                    funcionalidades del lado del servidor y crear sitios web dinámicos y personalizados.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service__item padd-15">
+                            <div class="service__item-inner">
+                                <div class="icon">
+                                    <i class="uil uil-layers-alt"></i>
+                                </div>
+                                <h4>LARAVEL</h4>
+                                <p>Como Junior especializado en el framework Laravel, tengo experiencia en el desarrollo
+                                    de aplicaciones web utilizando este potente framework de PHP. Colaboro con
+                                    diseñadores y desarrolladores senior para construir aplicaciones web eficientes y
+                                    escalables.</p>
+                            </div>
+                        </div>
+                        <div class="service__item padd-15">
+                            <div class="service__item-inner">
+                                <div class="icon">
+                                    <i class="uil uil-slack"></i>
+                                </div>
+                                <h4>PYTHON</h4>
+                                <p>Como Python Junior, me dedico a desarrollar aplicaciones y scripts utilizando el
+                                    lenguaje de programación Python. Trabajo en colaboración con otros desarrolladores y
+                                    contribuyo al desarrollo de soluciones eficientes y versátiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ¬¬¬¬¬ Section Portfolio ¬¬¬¬¬ -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section__title padd-15">
+                            <h2>Portafolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio__heading padd-15">
+                            <h2>Mis Proyectos:</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio__item padd-15">
+                            <div class="portfolio__item-inner shadow__dark">
+                                <div class="portfolio__img">
+                                    <img src="assets/img/portfolio/tienda_virtual.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item padd-15">
+                            <div class="portfolio__item-inner shadow__dark">
+                                <div class="portfolio__img">
+                                    <img src="assets/img/portfolio/electricsas.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item padd-15">
+                            <div class="portfolio__item-inner shadow__dark">
+                                <div class="portfolio__img">
+                                    <img src="assets/img/portfolio/patitas felices.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item padd-15">
+                            <div class="portfolio__item-inner shadow__dark">
+                                <div class="portfolio__img">
+                                    <img src="assets/img/portfolio/tienda_virtual.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item padd-15">
+                            <div class="portfolio__item-inner shadow__dark">
+                                <div class="portfolio__img">
+                                    <img src="assets/img/portfolio/electricsas.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item padd-15">
+                            <div class="portfolio__item-inner shadow__dark">
+                                <div class="portfolio__img">
+                                    <img src="assets/img/portfolio/patitas felices.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ¬¬¬¬¬ Section Contacto ¬¬¬¬¬ -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section__title padd-15">
+                            <h2>Contacto</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact__title padd-15">Tienes alguna pregunta?</h3>
+                    <h4 class="contact__sub-title padd-15">ESTOY A SU SERVICIO</h4>
+                    <div class="row">
+                        <div class="contact__info-item padd-15">
+                            <div class="icon"><i class="uil uil-phone-volume"></i></div>
+                            <h4>Llamame</h4>
+                            <p>321 909 88 19</p>
+                        </div>
+                        <div class="contact__info-item padd-15">
+                            <div class="icon"><i class="uil uil-map-marker"></i></div>
+                            <h4>Oficina</h4>
+                            <p>Bogotá</p>
+                        </div>
+                        <div class="contact__info-item padd-15">
+                            <div class="icon"><i class="uil uil-envelope-add"></i></div>
+                            <h4>Email</h4>
+                            <p>ideleim@gmail.com</p>
+                        </div>
+                        <div class="contact__info-item padd-15">
+                            <div class="icon"><i class="uil uil-globe"></i></div>
+                            <h4>Web</h4>
+                            <p>www.domain.com</p>
+                        </div>
+                    </div>
+                    <h3 class="contact__title padd-15">ENVIANOS UN MENSAJE</h3>
+                    <H4 class="contact__sub-title padd-15">Respondo los mensajes pronto</H4>
+                    <form action="">
+                        <div class="contact__form padd-15">
+                            <div class="row">
+                                <div class="form__item col-6 padd-15">
+                                    <div class="form__group">
+                                        <input type="text" class="form__control" placeholder="Nombre">
+                                    </div>
+                                </div>
+                                <div class="form__item col-6 padd-15">
+                                    <div class="form__group">
+                                        <input type="email" class="form__control" placeholder="Correo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form__item col-12 padd-15">
+                                    <div class="form__group">
+                                        <input type="text" class="form__control" placeholder="Asunto">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form__item col-12 padd-15">
+                                    <div class="form__group">
+                                        <textarea name="" class="form__control" id="" placeholder="Mensaje"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form__item col-12 padd-15">
+                                    <button type="submit" class="btn">ENVIAR MENSAJE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </div>
     </div>
-
-
+    <!-- ¬¬¬¬¬ Style switcher ¬¬¬¬¬ -->
+    <div class="style__switcher">
+        <div class="style__switcher-toggler s__icon">
+            <i class="uil uil-cog"></i>
+        </div>
+        <div class="day__night s__icon">
+            <i class="uil "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color1" onclick="setActiveStyle('color1')"></span>
+            <span class="color2" onclick="setActiveStyle('color2')"></span>
+            <span class="color3" onclick="setActiveStyle('color3')"></span>
+            <span class="color4" onclick="setActiveStyle('color4')"></span>
+            <span class="color5" onclick="setActiveStyle('color5')"></span>
+        </div>
+    </div>
     <!-- ¬¬¬¬¬ js ¬¬¬¬¬¬ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/main.js"></script>
-    
+    <script src="assets/js/style__switcher.js"></script>
+
 </body>
+
 </html>
