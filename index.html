@@ -364,21 +364,7 @@
                         <div class="portfolio__item padd-15">
                             <div class="portfolio__item-inner shadow__dark">
                                 <div class="portfolio__img">
-                                    <img src="assets/img/portfolio/tienda_virtual.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__item padd-15">
-                            <div class="portfolio__item-inner shadow__dark">
-                                <div class="portfolio__img">
-                                    <img src="assets/img/portfolio/electricsas.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__item padd-15">
-                            <div class="portfolio__item-inner shadow__dark">
-                                <div class="portfolio__img">
-                                    <img src="assets/img/portfolio/patitas felices.png" alt="">
+                                    <img src="assets/img/portfolio/fundaluz.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -398,7 +384,7 @@
                     <div class="row">
                         <div class="contact__info-item padd-15">
                             <div class="icon"><i class="uil uil-phone-volume"></i></div>
-                            <h4>Llamame</h4>
+                            <h4>Contacto</h4>
                             <p>321 909 88 19</p>
                         </div>
                         <div class="contact__info-item padd-15">
@@ -417,39 +403,53 @@
                             <p>www.domain.com</p>
                         </div>
                     </div>
-                    <h3 class="contact__title padd-15">ENVIANOS UN MENSAJE</h3>
-                    <H4 class="contact__sub-title padd-15">Respondo los mensajes pronto</H4>
-                    <form action="">
+                    <h3 class="contact__title padd-15">REGISTRATE</h3>
+                    <H4 class="contact__sub-title padd-15">Hablemos de tu proyecto</H4>
+                    <!-- action: es la ruta del archivo php -->
+                    <!-- method: como se va a enviar esa informacion -->
+                    <form action="" method="POST">
                         <div class="contact__form padd-15">
                             <div class="row">
                                 <div class="form__item col-6 padd-15">
                                     <div class="form__group">
-                                        <input type="text" class="form__control" placeholder="Nombre">
+                                        <input type="text" name="name" class="form__control" placeholder="Nombre">
                                     </div>
                                 </div>
                                 <div class="form__item col-6 padd-15">
                                     <div class="form__group">
-                                        <input type="email" class="form__control" placeholder="Correo">
+                                        <input type="email" name="correo" class="form__control" placeholder="Correo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form__item col-6 padd-15">
+                                    <div class="form__group">
+                                        <input type="text" name="telefono" class="form__control" placeholder="Telefono">
+                                    </div>
+                                </div>
+                                <div class="form__item col-6 padd-15">
+                                    <div class="form__group">
+                                        <input type="text" name="correo" class="form__control" placeholder="Profesion">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form__item col-12 padd-15">
                                     <div class="form__group">
-                                        <input type="text" class="form__control" placeholder="Asunto">
+                                        <input type="text" name="asunto" class="form__control" placeholder="Asunto">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form__item col-12 padd-15">
                                     <div class="form__group">
-                                        <textarea name="" class="form__control" id="" placeholder="Mensaje"></textarea>
+                                        <textarea name="textarea" class="form__control" id="" placeholder="Mensaje"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form__item col-12 padd-15">
-                                    <button type="submit" class="btn">ENVIAR MENSAJE</button>
+                                    <button type="submit" class="btn">REGISTRARME</button>
                                 </div>
                             </div>
                         </div>
