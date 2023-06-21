@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
     <link rel="stylesheet" href="assets/css/skins/color1.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.6/dist/sweetalert2.min.css">
     <!-- ¬¬¬¬¬ Style Switcher ¬¬¬¬¬ -->
     <link rel="stylesheet" href="assets/css/skins/color1.css" class="alternate__style" title="color1" disabled>
     <link rel="stylesheet" href="assets/css/skins/color2.css" class="alternate__style" title="color2" disabled>
@@ -64,7 +65,7 @@
                     <div class="row">
                         <div class="home__info padd-15">
                             <h3 class="hello">Hola, mi nombre es <span class="name">Harold Huertas</span></h3>
-                            <h3 class="my__profession">soy estudiante <span class="typing">FullStack básico</span></h3>
+                            <h3 class="my__profession">Me desempeño como: <span class="typing">FullStack básico</span></h3>
                             <p>Soy estudiante del curso básico en desarrollo Full stack, de la Universidad Distrital
                                 2023 en Bogotá, Colombia. </p>
                             <a href="assets/pdf/CV_Harold_Huertas.pdf" target="_blank" class="btn">Download CV</a>
@@ -399,49 +400,72 @@
                         </div>
                         <div class="contact__info-item padd-15">
                             <div class="icon"><i class="uil uil-globe"></i></div>
-                            <h4>Web</h4>
-                            <p>www.domain.com</p>
+                            <h4>GitHub</h4>
+                            <p>https://github.com/ideleim</p>
                         </div>
                     </div>
                     <h3 class="contact__title padd-15">REGISTRATE</h3>
-                    <H4 class="contact__sub-title padd-15">Hablemos de tu proyecto</H4>
+                    <H4 class="contact__sub-title padd-15">Y Hablamos de tu proyecto</H4>
                     <!-- action: es la ruta del archivo php -->
                     <!-- method: como se va a enviar esa informacion -->
-                    <form action="" method="POST">
+                    <form id="miFormulario" action="http://localhost:8000/api/registro" onsubmit="guardarRegistro(event)" method="POST">
                         <div class="contact__form padd-15">
                             <div class="row">
                                 <div class="form__item col-6 padd-15">
                                     <div class="form__group">
-                                        <input type="text" name="nombre" class="form__control" placeholder="Nombre">
+                                        <label for="nombre">Nombre:</label>
+                                        <input type="text" name="nombre" id="nombre" class="form__control" placeholder="Agrega tu nombre...">
                                     </div>
                                 </div>
                                 <div class="form__item col-6 padd-15">
                                     <div class="form__group">
-                                        <input type="email" name="correo" class="form__control" placeholder="Correo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form__item col-6 padd-15">
-                                    <div class="form__group">
-                                        <input type="text" name="telefono" class="form__control" placeholder="Telefono">
-                                    </div>
-                                </div>
-                                <div class="form__item col-6 padd-15">
-                                    <div class="form__group">
-                                        <input type="text" name="profesion" class="form__control" placeholder="Profesion">
+                                        <label for="apellidos">Apellidos:</label>
+                                        <input type="text" name="apellidos" id="apellidos" class="form__control" placeholder="Agrega tus apellidos...">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form__item col-6 padd-15">
                                     <div class="form__group">
-                                        <input type="text" name="empresa" class="form__control" placeholder="Empresa">
+                                        <label for="tipo">Tipo de Identificación:</label>
+                                        <select name="tipo" id="tipo" class="form__control">
+                                            <option value="cedula">Cedula</option>
+                                            <option value="tarjeta de identidad">Tarjeta de Identidad</option>
+                                            <option value="cedula de extranjeria">Cedula de Extranjeria</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form__item col-6 padd-15">
                                     <div class="form__group">
-                                        <input type="password" name="contraseña" class="form__control" placeholder="Contraseña">
+                                        <label for="identificacion">Número de Identificación:</label>
+                                        <input type="number" name="identificacion" id="identificacion" class="form__control" placeholder="Número de Identificación...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form__item col-6 padd-15">
+                                    <div class="form__group">
+                                        <label for="celular">Celular:</label>
+                                        <input type="number" name="celular" id="celular" class="form__control" placeholder="Agrega tu número de celular...">
+                                    </div>
+                                </div>
+                                <div class="form__item col-6 padd-15">
+                                    <div class="form__group">
+                                        <label for="profesion">Profesión:</label>
+                                        <input type="text" name="profesion" id="profesion" class="form__control" placeholder="Agrega tu profesión...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form__item col-6 padd-15">
+                                    <div class="form__group">
+                                        <label for="rol">Rol:</label>
+                                        <select name="rol" id="rol" class="form__control">
+                                            <option value="administrador">Administrador</option>
+                                            <option value="ejecutor">Ejecutor</option>
+                                            <option value="invitado">Invitado</option>
+                                            <option value="visualizador">Visualizador</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -477,6 +501,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/style__switcher.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

@@ -710,6 +710,12 @@ h3.my__profession{
     flex: 0 0 100%;
     max-width: 100%;
 }
+.contact label{
+    display: inline-block;
+    color: var(--text-color-700);
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
 .contact .contact__form .col-6{
     flex: 0 0 50%;
     max-width: 50%;

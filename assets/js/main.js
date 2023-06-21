@@ -1,3 +1,64 @@
+console.log('Loading Javascript..........')
+
+function guardarRegistro(event)
+{
+    event.preventDefault();
+
+    let formulario = document.getElementById('miFormulario');
+    let url = formulario.action;
+
+    let datos = {
+        nombre: formulario.nombre.value,
+        apellidos: formulario.apellidos.value,
+        tipo: formulario.tipo.value,
+        identificacion: formulario.identificacion.value,
+        celular: formulario.celular.value,
+        profesion: formulario.profesion.value,
+        rol: formulario.rol.value,
+    }
+
+    fetch(url,{
+        method: 'POST',
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(datos)
+    })
+    .then(function(response){
+        if(response.ok){
+            formulario.reset();
+            mostrarAlertaExitosa();           
+        }else{
+            mostrarAlertaError();
+        }        
+    })
+    .catch(function(error){
+        console.error(error);
+        mostrarAlertaError();
+    });
+}
+
+function mostrarAlertaExitosa(){
+    Swal.fire({
+        icon: 'success',
+        title: '¡Registro exitoso!',
+        text: 'En breve me comunicare contigo',
+        showConfirmButton: false,
+        timer: 3000
+    });
+}
+
+function mostrarAlertaError(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Debe Llenar todos los campos!',
+        showConfirmButton: false,
+        timer: 3000
+    });
+}
+
+
+
 // typing animation
 var typed = new Typed(".typing",{
     strings:["Diseñador Web", "Desarrollador Web", "Diseñador Grafico", "Ing Civil"],
